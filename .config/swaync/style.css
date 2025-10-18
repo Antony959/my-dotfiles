@@ -1,0 +1,50 @@
+@import "/home/antony/.cache/wal/colors-waybar.css";
+
+.notification-row {
+    outline: none;
+    margin: 10px;
+}
+
+.notification {
+    background-color: @background;
+    color: @foreground;
+    border: 2px solid @color4;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.title {
+    font-size: 1.2em;
+    color: @color4;
+    margin-bottom: 5px; }
+
+.body {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.notification-button {
+    background-color: @color1;
+    color: @foreground;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 5px;
+    transition: all 0.2s}
+
+.notification-button:hover {
+    background-color: @color2;
+}
+
+.control-center {
+    background-color: alpha(@background, 0.8);
+    border: 2px solid @color8;
+    border-radius: 20px;
+}
+
+.control-center .notification-row {
+    background-color: @color0;
+    border-radius: 15px;
+    margin: 5px;
+}
+.image {
+    margin-right: 15px; }

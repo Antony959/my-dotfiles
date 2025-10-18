@@ -1,0 +1,5 @@
+@import "/home/antony/.config/waybar/style.css";
+window#waybar {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;  /* Fade out */
+}

@@ -1,0 +1,63 @@
+configuration {
+    modi: "drun,run,window";
+    font: "jetbrains Mono Nerd Font 12";
+    icon-theme: "Papirus-Dark";
+    show-icons: true; 
+    display-drun: " ";  
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    background-color: @background;
+    border: 2px;
+    border-color: @color4;
+    border-radius: 15px;
+    width: 550px;
+    
+    padding: 25px;
+
+}
+
+mainbox {
+    orientation: vertical;
+   children: ["inputbar", "listview" ];
+    spacing: 0px;
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @color0;
+    text-color: @foreground;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+entry {
+    placeholder: "Pesquisar...";
+    placeholder-color: @color8;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+listview {
+    lines: 8;
+    spacing: 10px;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: @active-background;
+    text-color: @background;
+}

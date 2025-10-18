@@ -1,0 +1,182 @@
+@import "/home/antony/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono Nerd Font", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+#custom-spotify,
+#custom-notification,
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+    background-color: alpha(@background, 0.8);
+    color: @foreground;
+    margin: 4px 3px;
+    padding: 0px 12px;
+    border-radius: 12px;
+    border: 2px solid alpha(@color8, 0.6);
+    transition: all 0.3s ease;
+}
+
+/* Workspaces */
+#workspaces {
+      border: 2px solid @color2;
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 4px 1px;
+    border-radius: 8px;
+    color: alpha(@foreground, 0.7);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: @background;
+    background-color: @color4;
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    color: @foreground;
+    background-color: alpha(@color8, 0.3);
+    border-radius: 8px;
+}
+
+/* Relógio */
+#clock {
+    background-color: alpha(@background, 0.8);
+    color: @color4;
+    font-weight: bold;
+    border: 2px solid @color4;
+}
+
+#clock:hover {
+    background-color: @color4;
+    color: @background;
+}
+
+/* CPU */
+#cpu {
+    background-color: alpha(@background, 0.8);
+    color: @color2;
+    border: 2px solid @color2;
+}
+
+#cpu:hover {
+    background-color: @color2;
+    color: @background;
+}
+
+#memory {
+    background-color: alpha(@background, 0.8);
+    color: @color3;
+    border: 2px solid @color3;
+}
+
+#memory:hover {
+    background-color: @color3;
+    color: @background;
+}
+
+#pulseaudio {
+    background-color: alpha(@background, 0.8);
+    color: @color6;
+    border: 2px solid @color6;
+}
+
+#pulseaudio:hover {
+    background-color: @color6;
+    color: @background;
+}
+
+#pulseaudio.muted {
+    background-color: alpha(@background, 0.8);
+    color: @color1;
+    border: 2px solid @color1;
+}
+
+/* Microfone */
+#pulseaudio.microphone {
+    background-color: alpha(@background, 0.8);
+    color: @color5; 
+    border: 2px solid @color5;
+}
+
+#pulseaudio.microphone:hover {
+    background-color: @color5;
+    color: @background;
+}
+
+#pulseaudio.source-muted {
+    background-color: alpha(@background, 0.8);
+    color: @color1;
+    border: 2px solid @color1;
+}
+
+/* Tray */
+#tray {
+    background-color: alpha(@background, 0.8);
+    border: 2px solid @color7;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @color1;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 6px;
+}
+
+.modules-right > widget:last-child > #tray {
+    margin-right: 6px;
+}
+
+#cpu.not-memory,
+#memory.not-memory,
+#pulseaudio.not-audio {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+tooltip {
+    background: alpha(@background, 0.9);
+    border: 2px solid alpha(@color8, 0.6);
+    border-radius: 8px;
+    color: @foreground;
+}
+
+tooltip label {
+    color: @foreground;
+}
+#custom-spotify {
+        border: 2px solid @color1;
+}
+#tray {
+        border: 2px solid @color5;
+}
+#custom-notification {
+        border: 2px solid @color2;
+}

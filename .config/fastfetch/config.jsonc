@@ -1,0 +1,111 @@
+{
+  "logo": {
+    "type": "auto", //kitty ou kitty-direct para imagens e file para ASCII
+    "source": "opensuse",
+    "width": 15, //para imagens
+    "height": 20, //para imagens
+    "padding": {
+      "left": 0,
+      "top": 1,
+      "right": 3
+    },
+    "color": {
+      //"1": "#73ba25",
+      "2": "\u001b[97m"
+      // "1": "38;2;52;152;219", // Um tom de azul
+    }
+  },
+  "general": {
+    "playerName": "" // Deixe vazio para detectar automaticamente
+  },
+  "display": {
+    "separator": " ➜  ", //separa o nome da chave da informação (ex:  |> Arch Linux)
+    "color": {
+      "separator": "38;2;77;218;255" // o próprio |>
+    },
+    "brightColor": true, //deixa as cores mais vivas.
+    "bar": { // configuração de barras de progresso ex.: uso de RAM
+      "width": 15 //15 caracteres de largura
+      //  "charElapsed": "█", //caractere preenchido
+      // "charTotal": "░" // caractere vazio
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "38;2;77;77;255",
+        "yellow": "yellow",
+        "red": "red"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "                 S I S T E M A",
+      "outputColor": "blue" // A cor do texto
+    },
+    "break", // coloca uma linha em branco para dar espaço entre os types
+    {
+      "type": "os", //tipo que será mostrado a informação
+      "key": "├", // o ícone que aparece antes da informação
+      "keyColor": "blue" // cor do ícone
+    },
+    {
+      "type": "kernel",
+      "key": "└󰌢 ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "└󰏗",
+      "keyColor": "blue",
+      "outputColor": "white"
+    },
+    {
+      "type": "custom",
+      "format": "              C O M P U T A D O R",
+      "outputColor": "blue"
+    },
+    "break",
+    {
+      "type": "memory",
+      "key": "├",
+      "keyColor": "32"
+    },
+    {
+      "type": "disk",
+      "key": "└󰋊",
+      "keyColor": "32",
+      "format": "{1} / {2}" // mostra tipo: 10GB / 50GB
+    },
+    {
+      "type": "cpu",
+      "key": "└",
+      "keyColor": "32"
+    },
+    {
+      "type": "gpu",
+      "key": "└󰤽",
+      "keyColor": "32"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "                  M Í D I A",
+      "outputColor": "blue"
+    },
+    {
+      "type": "player", //Mostra o nome do reprodutor de mídia que está ativo
+      "key": "├",
+      "outputColor": "33", // Define a cor do nome do player.
+      "keyColor": "red"
+    },
+    {
+      "type": "media", // Mostra a informação da mídia que está tocando
+      "key": "└",
+      "keyColor": "red",
+      "outputColor": "33"
+    },
+    "break"
+  ]
+}

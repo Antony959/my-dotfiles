@@ -1,0 +1,140 @@
+@import "/home/antony/.cache/wal/colors-waybar.css";
+* {
+  font-family: "JetBrains Mono Nerd Font", FontAwesome, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: alpha(@background, 0.0);
+  color: @foreground;
+}
+
+#workspaces {
+background-color: @background;
+border-radius: 20px;
+margin: 5px 5px;
+font-weight: bolder;
+}
+
+/* --- WORKSPACES INATIVAS --- */
+#workspaces button {
+background-color: transparent;
+padding: 1px 7px;
+border-radius: 20px;
+margin: 3px 3px;
+color: @color8;
+transition: all 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+#workspaces button:hover {
+background-color: @color1;
+color: @foreground;
+}
+
+/* --- WORKSPACE ATIVA --- */
+#workspaces button.active {
+background-color: @color4;
+color: @background;
+}
+
+#custom-rofi,
+#custom-notification,
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#tray,
+#network {
+background: #1e1e2e;
+padding: 0px 10px;
+margin: 3px 0px;
+margin-top: 5px;
+}
+#network {
+color:  #a6adc8;
+border-radius: 10px 0px 0px 10px;
+}
+#cpu {
+color: @color11;
+border-radius: 0px 10px 10px 0px;
+margin-right: 10px;
+}
+
+#memory {
+color: @color10;
+border-radius: 10px 0px 0px 10px;
+}
+
+#clock {
+color: @color13;
+border-radius: 10px 10px 10px 10px;
+margin-left: 5px;
+border-right: 0px;
+}
+
+#pulseaudio {
+color: @color12;
+border-left: 0px;
+border-right: 0px;
+}
+
+#pulseaudio.microphone {
+color: @color13;
+border-radius: 0px 10px 10px 0px;
+border-left: 0px;
+border-right: 0px;
+margin-right: 5px;
+}
+#pulseaudio.muted {
+color: @color1;
+}
+#tray {
+border-radius: 10px;
+margin-right: 10px;
+}
+
+#custom-notification {
+background: #1e1e2e;
+padding: 0px 10px;
+margin: 3px 0px;
+margin-top: 5px;
+border-radius: 10px 0px 0px 10px;
+border-right: 0px;
+color: @color12;
+transition: all 0.3s ease-in-out; /* transição suave */
+}
+
+/* Quando DND está ativo (laranja/amarelo) */
+#custom-notification.dnd-none,
+#custom-notification.dnd-inhibited-none {
+color: #ffa500;
+background: rgba(255, 165, 0, 0.2);
+}
+
+/* Estado normal sem notificações (cor padrão) */
+#custom-notification.none {
+color: @color12;
+background: #1e1e2e;
+}
+
+/* Estados inibidos (azul) */
+#custom-notification.inhibited-none,
+#custom-notification.inhibited-notification {
+color: #5dade2;
+background: rgba(93, 173, 226, 0.2);
+}
+#custom-rofi {
+background: #1e1e2e;
+border-radius: 10px;
+padding: 0px 10px;
+margin: 3px 0px;
+font-size: 18px;
+transition: all 0.2s;
+}
+#custom-rofi:hover {
+background: #313244;
+color: #a6e3a1;
+}
+
