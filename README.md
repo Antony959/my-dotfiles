@@ -1,14 +1,14 @@
 # MEU HYPRLAND RICE
 
-- • **WM** Hyprland
-- • **Shell** Zsh
-- • **Terminal** Kitty
-- • **Panel** Waybar
-- • **Notificações** Swaync
-- • **Launcher** Rofi
-- • **Gerenciador de arquivos** Dolphin
-- • **Editor de texto** Nvim
-- • **Logout menu** Wlogout
+-  **WM** Hyprland
+-  **Shell** Zsh
+-  **Terminal** Kitty
+-  **Panel** Waybar
+-  **Notificações** Swaync
+- **Launcher** Rofi
+- **Gerenciador de arquivos** Dolphin
+- **Editor de texto** Nvim
+- **Logout menu** Wlogout
 
 (opcional) baixar Jetbrains nerd font e ícone papirus
 
