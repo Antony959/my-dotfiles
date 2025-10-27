@@ -19,3 +19,6 @@ Wlogout feito por [binnewbs](https://github.com/binnewbs/arch-hyprland)
 
 
 
+
+
+
