@@ -10,7 +10,6 @@
 - **Editor de texto** Nvim
 - **Logout menu** Wlogout
 
-(opcional) baixar Jetbrains nerd font e ícone papirus
 
 Wlogout feito por [binnewbs](https://github.com/binnewbs/arch-hyprland)
 
