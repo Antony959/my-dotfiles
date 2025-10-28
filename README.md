@@ -16,7 +16,20 @@
 
 <img width="1921" height="1041" alt="Image" src="https://github.com/user-attachments/assets/1551ccd7-908b-4ac7-84f1-cf71291dd230" />
 
+### Keybinds
 
-
+| Atalho | Descrição |
+|---------|----------|
+| `Super + Q` | Close window |
+| `Super + Z` | Terminal |
+| `Super + D` | Rofi menu |
+| `Super + S` | Nvim |
+| `Super + W` | Wallpaper Selector |
+| `Super + V` | Cliphist menu |
+| `Super + R` | Restart Waybar |
+| `Super + T` | Select Waybar |
+| `Super + E` | Dolphin |
+| `Super + B` | Firefox |
+| `Super + X` | Vesktop |
 
 
