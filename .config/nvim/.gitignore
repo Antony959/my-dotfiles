@@ -1,0 +1,22 @@
+# Neovim Cache
+*.swp
+*.swo
+*~
+.netrwhist
+undodir/
+spell/
+shada/
+
+# Packer
+plugin/packer_compiled.lua
+plugin/packer_compiled.lua.lua
+
+# LSP
+.lsp/
+
+# Lazy.nvim (se usar)
+lazy-lock.json
+
+# Outros
+.DS_Store
+*.log
