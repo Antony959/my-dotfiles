@@ -20,6 +20,7 @@
 | `Super + S` | Nvim |
 | `Super + W` | Wallpaper Selector |
 | `Super + V` | Cliphist menu |
+| `Ctrl + Delete` | Wlogout |
 | `Super + R` | Restart Waybar |
 | `Super + T` | Select Waybar |
 | `Super + E` | Dolphin |
