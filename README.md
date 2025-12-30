@@ -10,7 +10,7 @@
 - **Editor de texto** Nvim
 - **Logout menu** Wlogout
 
-#PACOTES (NOME PODE MUDAR DEPENDENDO DA DISTRO!!!)
+# PACOTES (NOME PODE MUDAR DEPENDENDO DA DISTRO!!!)
 
 qt6ct qt5ct polkit-kde xdg-desktop-portal-hyprland xdg-deskotp-portal-gtl waybar swww wl-paste cliphist swaync wlogout kbuildsycoca6 hypridle hyprlock kitty dolphin rofi grim slurp xwayland cava fastfetch nvim
 
