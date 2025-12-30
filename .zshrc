@@ -9,12 +9,6 @@ source $ZSH/oh-my-zsh.sh
 export LANG=pt_BR.UTF-8
 
 alias zshcfg="nvim ~/.zshrc"
-alias si="sudo pacman -S"
-alias syu="sudo pacman -Syu"
-alias su="sudo pacman -U"
-alias sr="sudo pacman -R"
-alias scc="sudo pacman -Scc"
-alias Sns="sudo pacman -Rns"
 alias ys="yay -S --noconfirm"
 alias yr="yay -R"
 alias gparted="sudo -EH gparted"
@@ -32,7 +26,7 @@ bindkey "^H" backward-kill-word
 
 fastfetch
 
-export PATH=$PATH:/home/antony/.spicetify
+export PATH=$PATH:~/.spicetify/
 
 export PATH="$HOME/.local/bin:$PATH"
 export TERMINAL=kitty
