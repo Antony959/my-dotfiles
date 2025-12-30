@@ -1,9 +1,9 @@
 {
   "logo": {
-    "type": "auto", //kitty ou kitty-direct para imagens e file para ASCII
-    "source": "opensuse",
-    "width": 15, //para imagens
-    "height": 20, //para imagens
+    "type": "file", //kitty ou kitty-direct para imagens e file para ASCII
+    "source": "~/.config/fastfetch/ascii.txt",
+    // "width": 15, //para imagens
+    // "height": 20, //para imagens
     "padding": {
       "left": 0,
       "top": 1,

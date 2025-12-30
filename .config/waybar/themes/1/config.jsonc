@@ -1,0 +1,129 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 41,
+  "spacing": 2,
+  "margin-top": 2,
+  "margin-left": 2,
+  "margin-right": 2,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "custom/spotify",
+    "clock",
+    "custom/notification"
+  ],
+  "modules-right": [
+    "memory",
+    "cpu",
+    "group/audio",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": false,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1",
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %d %B %Y}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#f4b8e4'><b>{}</b></span>",
+        "days": "<span color='#c6d0f5'><b>{}</b></span>",
+        "weeks": "<span color='#99d1db'><b>W{}</b></span>",
+        "weekdays": "<span color='#a6d189'><b>{}</b></span>",
+        "today": "<span color='#f2d5cf'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "󰍛 {usage}%",
+    "tooltip": true,
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+  "memory": {
+    "interval": 5,
+    "format": "󰾆 {percentage}%",
+    "tooltip-format": "RAM: {used:0.1f}G/{total:0.1f}G ({percentage}%)\nSwap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
+    "on-scroll-up": "",
+    "on-scroll-down": ""
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋎",
+      "headset": "󰋎",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "tooltip-format": "Volume: {volume}%"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 Muted",
+    "on-click": "pavucontrol -t 4",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+    "scroll-step": 5,
+    "tooltip-format": "Microphone: {volume}%"
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "󰎟",
+    "on-click": "swaync-client --toggle-panel",
+    "on-click-right": "swaync-client --toggle-dnd"
+  },
+  "custom/spotify": {
+    "format": "{}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/.config/hypr/scripts/spotify.sh",
+    "on-click": "playerctl play-pause -p spotify",
+    "on-scroll-up": "playerctl next -p spotify",
+    "on-scroll-down": "playerctl previous -p spotify"
+  }
+}
