@@ -10,6 +10,12 @@
 - **Editor de texto** Nvim
 - **Logout menu** Wlogout
 
+#PACOTES (NOME PODE MUDAR DEPENDENDO DA DISTRO!!!)
+
+qt6ct qt5ct polkit-kde xdg-desktop-portal-hyprland xdg-deskotp-portal-gtl waybar swww wl-paste cliphist swaync wlogout kbuildsycoca6 hypridle hyprlock kitty dolphin rofi grim slurp xwayland cava fastfetch nvim
+
+Opcional: papirus-icon-theme Colloid-Dark Bibata-Modern-Ice
+
 ### Keybinds
 
 | Atalho | Descrição |
@@ -26,7 +32,6 @@
 | `Super + E` | Dolphin |
 | `Super + B` | Firefox |
 | `Super + X` | Vesktop |
-
 
 <img width="1921" height="1081" alt="Image" src="https://github.com/user-attachments/assets/89436939-3178-4b53-b722-8ee0141efccf" />
 
