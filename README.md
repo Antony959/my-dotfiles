@@ -12,7 +12,7 @@
 
 ### PACOTES (NOME PODE MUDAR DEPENDENDO DA DISTRO!!!)
 
-qt6ct qt5ct polkit-kde xdg-desktop-portal-hyprland xdg-deskotp-portal-gtk waybar swww wl-paste cliphist swaync wlogout kbuildsycoca6 hypridle hyprlock kitty dolphin rofi grim slurp xwayland cava fastfetch nvim
+qt6ct qt5ct polkit-kde xdg-desktop-portal-hyprland xdg-deskotp-portal-gtk waybar swww wl-paste cliphist swaync wlogout kbuildsycoca6 hypridle hyprlock hyprland kitty dolphin rofi grim slurp xwayland cava fastfetch nvim
 
 Opcional: papirus-icon-theme Colloid-Dark Bibata-Modern-Ice
 
